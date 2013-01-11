@@ -5,6 +5,11 @@ then
 echo "no project name given"
 exit 1
 fi
+if [[ ! -z $2 ]]
+then
+echo "you need to quote project names with a space in them"
+exit 1
+fi 
 
 PROJECTNAME=$1
 PROJECTDIR="$HOME/Documents/$PROJECTNAME"
