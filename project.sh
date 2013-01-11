@@ -1,4 +1,6 @@
 #/bin/bash
+# script to setup a project directory with boilerplate stuff.
+# see https://github.com/steverydz/project
 
 if [[ -z $1 ]]
 then
