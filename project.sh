@@ -1,10 +1,12 @@
 #/bin/bash
+PROJECTNAME=$1
+PROJECTDIR="~/Documents/$PROJECTNAME"
 
 # Creates directory with desired project name
-mkdir ~/Documents/$1
+mkdir $PROJECTDIR
 
 # Enters directory
-cd ~/Documents/$1
+cd $PROJECTDIR
 
 # Clones Steve Rydz's boilerplate directory
 git clone git@github.com:steverydz/boilerplate.git
