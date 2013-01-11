@@ -2,7 +2,7 @@
 
 
 PROJECTNAME=$1
-PROJECTDIR="~/Documents/$PROJECTNAME"
+PROJECTDIR="$HOME/Documents/$PROJECTNAME"
 
 # Creates directory with desired project name
 mkdir $PROJECTDIR
