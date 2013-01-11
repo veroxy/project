@@ -1,5 +1,10 @@
 #/bin/bash
 
+if [[ -z $1 ]]
+then
+echo "no project name given"
+exit 1
+fi
 
 PROJECTNAME=$1
 PROJECTDIR="$HOME/Documents/$PROJECTNAME"
