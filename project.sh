@@ -1,22 +1,29 @@
 #/bin/bash
+# script to setup a project directory with boilerplate stuff.
+# see https://github.com/steverydz/project
+
+if [[ -z $1 ]]
+then
+echo "no project name given"
+exit 1
+fi
+if [[ ! -z $2 ]]
+then
+echo "you need to quote project names with a space in them"
+exit 1
+fi 
+
+PROJECTNAME=$1
+PROJECTDIR="$HOME/Documents/$PROJECTNAME"
 
 # Creates directory with desired project name
-mkdir ~/Documents/$1
+mkdir -p "$PROJECTDIR"
 
 # Enters directory
-cd ~/Documents/$1
 
 # Clones Steve Rydz's boilerplate directory
-git clone git@github.com:steverydz/boilerplate.git
+git clone git@github.com:steverydz/boilerplate.git "$PROJECTDIR"
 
-# Enters boilerplate directory
-cd boilerplate
 
-# Moves boilerplate contents to root
-mv * ..
-
-# Goes back to root directory
-cd ..
-
-# Removes empty boilerplate directory, readme and git
-rm -rf boilerplate README.md .git
+# Removes readme and git
+rm -rf "$PROJECTDIR/{.git,README.md}"
