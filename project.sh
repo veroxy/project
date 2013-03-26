@@ -24,3 +24,6 @@ git clone git@github.com:steverydz/boilerplate.git "$PROJECTDIR"
 
 # Removes readme and git
 rm -rf $PROJECTDIR/{.git*,README.md}
+
+# All done!
+echo "You're ready to rock!"
