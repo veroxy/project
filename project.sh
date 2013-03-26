@@ -19,8 +19,6 @@ PROJECTDIR="$HOME/Documents/$PROJECTNAME"
 # Creates directory with desired project name
 mkdir -p "$PROJECTDIR"
 
-# Enters directory
-
 # Clones Steve Rydz's boilerplate directory
 git clone git@github.com:steverydz/boilerplate.git "$PROJECTDIR"
 
