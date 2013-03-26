@@ -1,5 +1,5 @@
 #/bin/bash
-# script to setup a project directory with boilerplate stuff.
+# Original script by Steve Rydz (https://github.com/steverydz)
 # Improvements made to this script by Bob (https://github.com/rjw1)
 
 if [[ -z $1 ]]
@@ -23,7 +23,6 @@ mkdir -p "$PROJECTDIR"
 
 # Clones Steve Rydz's boilerplate directory
 git clone git@github.com:steverydz/boilerplate.git "$PROJECTDIR"
-
 
 # Removes readme and git
 rm -rf $PROJECTDIR/{.git*,README.md}

@@ -3,7 +3,7 @@ Project
 
 Improvements made to this script by Bob (https://github.com/rjw1)
 
-A very simple script that creates a new directory and pulls in my boilerplate repo.
+A very simple script that creates a new directory and pulls in my boilerplate repo. If you would like to use this script with your own boilerplate, just change the URL on `line 25` to point to your boilerplates repo.
 
 ## Usage
 
