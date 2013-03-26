@@ -11,7 +11,7 @@ if [[ ! -z $2 ]]
 then
 echo "you need to quote project names with a space in them"
 exit 1
-fi 
+fi
 
 PROJECTNAME=$1
 PROJECTDIR="$HOME/Documents/$PROJECTNAME"
@@ -26,4 +26,4 @@ git clone git@github.com:steverydz/boilerplate.git "$PROJECTDIR"
 
 
 # Removes readme and git
-rm -rf "$PROJECTDIR/{.git,README.md}"
+rm -rf $PROJECTDIR/{.git*,README.md}
